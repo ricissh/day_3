@@ -13,12 +13,22 @@ namespace day_3
             Funkcija();
             Funkcija3(5, 6);
             int mainigais2 = Funkcija4(12, 14);
+            string mainigais5 = Funkcija5("zilonis", "ainars", "aigars");
+           
             Console.WriteLine(mainigais2);
+            Console.WriteLine(mainigais5);
+            String var1,var2,var3;
+            var1 = Console.ReadLine();
+            var2 = Console.ReadLine();
+            var3 = Console.ReadLine();
+            mainigais5 = Funkcija5(var1,var2,var3);
             Console.ReadLine();
+            
 
         }
 
         static void Funkcija()
+
         {
             int a, b, c;
 
@@ -50,7 +60,17 @@ namespace day_3
             int result;
             result = skaitlis2 + skaitlis1;
             return result;
-            }
-       }        
+        }
+
+        static string Funkcija5(string virkne1, string virkne2, string virkne3)
+        {
+            string result;
+            result = virkne1 + virkne2 + virkne3;
+            
+          
+            return result;
+        }
+            
+     }        
         
 }
